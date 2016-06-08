@@ -9,7 +9,11 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
+
     {{ content }}
+    {% if page.image %}
+    <img class="caption__media" src = "{{site.baseurl}}/images/{{ page.image }}">
+  {% endif %}
   </div>
 
 </article>
